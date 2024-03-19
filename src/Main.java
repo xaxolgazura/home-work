@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -31,11 +33,11 @@ public class Main {
 
         var frog = 3.5;
         System.out.println(frog);
-        frog =  frog * 10;
+        frog = frog * 10;
         System.out.println(frog);
-        frog =  frog / 3.5;
+        frog = frog / 3.5;
         System.out.println(frog);
-        frog =  frog + 4;
+        frog = frog + 4;
         System.out.println(frog);
 
         var firstBoxerWeight = 82.7;
@@ -95,16 +97,16 @@ public class Main {
         System.out.println(totalStudents);
         int totalSheets = 480;
         System.out.println(totalSheets);
-        int forEachStudent = (totalSheets/totalStudents);
-        System.out.println("На каждого ученика рассчитано " + totalSheets/totalStudents + " листов бумаги" );
+        int forEachStudent = (totalSheets / totalStudents);
+        System.out.println("На каждого ученика рассчитано " + totalSheets / totalStudents + " листов бумаги");
 
 
         byte bottlesProducedMachine = 16;
         System.out.println(bottlesProducedMachine);
         byte Minutes = 2;
         System.out.println(Minutes);
-        int in1Minute = (bottlesProducedMachine/Minutes);
-        System.out.println(bottlesProducedMachine/Minutes);
+        int in1Minute = (bottlesProducedMachine / Minutes);
+        System.out.println(bottlesProducedMachine / Minutes);
         byte in20Minute = 20;
         System.out.println(in20Minute);
         int timeMinute = (in20Minute * in1Minute);
@@ -115,8 +117,8 @@ public class Main {
         System.out.println("За сутки машина производит " + forDay * in1Minute + " штук бутылок");
         int for3Day = 4320;
         System.out.println(for3Day);
-        int in3Days = (for3Day *  in1Minute);
-        System.out.println("За 3 суток машина производит " + for3Day *  in1Minute + " штук бутылок");
+        int in3Days = (for3Day * in1Minute);
+        System.out.println("За 3 суток машина производит " + for3Day * in1Minute + " штук бутылок");
         int perMonth = 43200;
         System.out.println(perMonth);
         int in1Month = (perMonth * in1Minute);
@@ -125,17 +127,17 @@ public class Main {
         byte totalPaintСans = 120;
         System.out.println(totalPaintСans);
         byte brownPaint = 4;
-        System.out.println( brownPaint );
+        System.out.println(brownPaint);
         byte whitePaint = 2;
         System.out.println(whitePaint);
         int paint1Classes = (brownPaint + whitePaint);
         System.out.println(brownPaint + whitePaint);
         int totalClasses = (totalPaintСans / paint1Classes);
         System.out.println(totalPaintСans / paint1Classes);
-        int totalWhite = (totalClasses * whitePaint );
+        int totalWhite = (totalClasses * whitePaint);
         System.out.println(totalClasses * whitePaint);
-        int totalBrown = (totalClasses * brownPaint );
-        System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhite + " банок белой краски и " + totalBrown + " банок коричневой краски" );
+        int totalBrown = (totalClasses * brownPaint);
+        System.out.println("В школе, где " + totalClasses + " классов, нужно " + totalWhite + " банок белой краски и " + totalBrown + " банок коричневой краски");
 
         int bannans = 80;
         System.out.println(bannans);
@@ -154,9 +156,9 @@ public class Main {
         rawEggs = rawEggs * 4;
         System.out.println(rawEggs);
         int totalWeightBreakfast = (bannans + milk + iceСream + rawEggs);
-        System.out.println("Объщий вес спортзавтрака " +( bannans + milk + iceСream + rawEggs) + " грамм");
+        System.out.println("Объщий вес спортзавтрака " + (bannans + milk + iceСream + rawEggs) + " грамм");
         float onKg = 1.090f;
-        System.out.println("Объщий вес спортзавтрака " + onKg +  " кг");
+        System.out.println("Объщий вес спортзавтрака " + onKg + " кг");
 
         byte loseWeight = 7;
         System.out.println(loseWeight);
@@ -164,15 +166,15 @@ public class Main {
         System.out.println(firstWay);
         float secondWay = 0.500f;
         System.out.println(secondWay);
-        float firstLoseWeight = (loseWeight/firstWay);
-        System.out.println("Потребуеться " + loseWeight/firstWay + " дней для первого способа ");
-        float secondLoseWeight = (loseWeight/secondWay);
-        System.out.println("Потребуеться " + loseWeight/secondWay + " дней для второго способа");
+        float firstLoseWeight = (loseWeight / firstWay);
+        System.out.println("Потребуеться " + loseWeight / firstWay + " дней для первого способа ");
+        float secondLoseWeight = (loseWeight / secondWay);
+        System.out.println("Потребуеться " + loseWeight / secondWay + " дней для второго способа");
 
 
         int getsMasha = 67_760;
         System.out.println(getsMasha);
-        int getDenis =  83_690;
+        int getDenis = 83_690;
         System.out.println(getDenis);
         int getKristina = 76_230;
         System.out.println(getKristina);
@@ -183,11 +185,89 @@ public class Main {
         int salaryDifferentialKristina = 7623;
         System.out.println(salaryDifferentialKristina);
         int аnnualIncomeMasha = getsMasha + salaryDifferentialMasha;
-        System.out.println("Маша теперь получает " + (getsMasha + salaryDifferentialMasha)+ " рублей. Годовой доход вырос на " + salaryDifferentialMasha + " рублей ");
+        System.out.println("Маша теперь получает " + (getsMasha + salaryDifferentialMasha) + " рублей. Годовой доход вырос на " + salaryDifferentialMasha + " рублей ");
         int аnnualIncomeDenis = getDenis + salaryDifferentialDenis;
-        System.out.println("Денис теперь получает " +(getDenis + salaryDifferentialDenis)+ " рублей. Годовой доход вырос на " + salaryDifferentialDenis + " рублей ");
+        System.out.println("Денис теперь получает " + (getDenis + salaryDifferentialDenis) + " рублей. Годовой доход вырос на " + salaryDifferentialDenis + " рублей ");
         int аnnualIncomeKristina = getKristina + salaryDifferentialKristina;
-        System.out.println("Кристина теперь получает " + (getKristina + salaryDifferentialKristina) + " рублей. Годовой доход вырос на " +  salaryDifferentialKristina  + " рублей ");
+        System.out.println("Кристина теперь получает " + (getKristina + salaryDifferentialKristina) + " рублей. Годовой доход вырос на " + salaryDifferentialKristina + " рублей ");
+
+
+        int age = 18;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age + " то он совершеннолетний");
+        }
+        int age2 = 17;
+        if (age >= 18) {
+            System.out.println("Если возраст человека равен " + age2 + " он не достиг совершеннолетия, нужно немного подождать");
+        }
+        int temperatyre = 4;
+        if (temperatyre < 5) {
+            System.out.println("На улице " + temperatyre + " градусов, нужно надеть шапку");
+        }
+        int temperatyre2 = 6;
+        if (temperatyre2 > 5) {
+            System.out.println("На улице " + temperatyre2 + " градусов, можно идти без шапки");
+        }
+        int speed = 61;
+        if (speed > 60) {
+            System.out.println("Если скорость " + speed + " км/ч, то прийдется заплатить штраф");
+        }
+        int speed2 = 59;
+        if (speed2 < 60) {
+            System.out.println("Если скорость " + speed2 + "км/ч, то можно ездить спокойно");
+        }
+
+        int agePerson = 6;
+        if (agePerson >= 2 && agePerson <= 6) {
+            System.out.println("Если возраст человека равен  " + agePerson + " лет то ему нужно ходить в детский сад");
+        } else {
+            System.out.println("Если возраст человека больше " + agePerson + " то он не ходит в детский сад");
+        }
+        int agePerson2 = 16;
+        if (agePerson2 >= 7 && agePerson2 <= 16) {
+            System.out.println("Если возраст человека равен  " + agePerson2 + " то ему нужно ходить в школу");
+        } else {
+            System.out.println("Если возраст человека больше " + agePerson2 + " то ему не нужно ходить в школу");
+        }
+        int agePerson3 = 24;
+        if (agePerson3 >= 18 && agePerson3 <= 24) {
+            System.out.println("Если возраст человека равен  " + agePerson3 + " то ему нужно ходить в институт");
+        } else {
+            System.out.println("Если возраст человека больше  " + agePerson3 + " то ему не нужно ходить в институт");
+        }
+        int agePerson4 = 25;
+        if (agePerson4 >= 25) {
+            System.out.println("Если возраст человека равен " + agePerson4 + " то ему нужно ходить на работу");
+        } else {
+            System.out.println("Если возраст человека меньше " + agePerson4 + " то ему не нужно ходить на работу");
+        }
+
+        int agePerson5 = 15;
+        if (agePerson5 < 5){
+            System.out.println("Если возраст ребенка меньше " + agePerson5 + " то ему нельзя кататься на аттракционе");
+        }else if (agePerson5 > 5 && agePerson5 <= 14){
+            System.out.println("Если возраст ребенка равен " + agePerson5 + " то он может кататься на аттракционе в сопровождении взрослого");
+        }else if (agePerson5 >= 14){
+            System.out.println("Если возраст ребенка больше " + agePerson5 + " то он может кататься на аттракционе без сопровождения взрослых");
+        }
+
+        int human = 102;
+        if(human <= 60){
+            System.out.println("В вогоне есть седячие " + (60-human) + " и осталось еще 42 стоячих места");
+        }else if (human <= 60 && human <=102){
+            System.out.println("В вагоне поезда закончелись сидячие места, остались только стоячии " +(102-human));
+        }else {
+            System.out.println("Вагон полностью забит, переполнен на " +(102-human) + " человек");
+        }
+        int number1 = 3;
+        if (number1 >2){
+            System.out.println("Чесло " + number1 + " больше");
+        }else if (number1 >2 && number1 > 1){
+            System.out.println("Чесло 1 2 3 " + number1 + " какое больше");
+        }
+
+
 
     }
+
 }
