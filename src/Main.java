@@ -195,10 +195,8 @@ public class Main {
         int age = 18;
         if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " то он совершеннолетний");
-        }
-        int age2 = 17;
-        if (age >= 18) {
-            System.out.println("Если возраст человека равен " + age2 + " он не достиг совершеннолетия, нужно немного подождать");
+        }else if (age < 18) {
+            System.out.println("Если возраст человека меньше " + age + " он не достиг совершеннолетия, нужно немного подождать");
         }
         int temperatyre = 4;
         if (temperatyre < 5) {
@@ -221,19 +219,19 @@ public class Main {
         if (agePerson >= 2 && agePerson <= 6) {
             System.out.println("Если возраст человека равен  " + agePerson + " лет то ему нужно ходить в детский сад");
         } else {
-            System.out.println("Если возраст человека больше " + agePerson + " то он не ходит в детский сад");
+            System.out.println("Если возраст человека " + agePerson + " то он не ходит в детский сад");
         }
         int agePerson2 = 16;
         if (agePerson2 >= 7 && agePerson2 <= 16) {
             System.out.println("Если возраст человека равен  " + agePerson2 + " то ему нужно ходить в школу");
         } else {
-            System.out.println("Если возраст человека больше " + agePerson2 + " то ему не нужно ходить в школу");
+            System.out.println("Если возраст человека  " + agePerson2 + " то ему не нужно ходить в школу");
         }
         int agePerson3 = 24;
         if (agePerson3 >= 18 && agePerson3 <= 24) {
             System.out.println("Если возраст человека равен  " + agePerson3 + " то ему нужно ходить в институт");
         } else {
-            System.out.println("Если возраст человека больше  " + agePerson3 + " то ему не нужно ходить в институт");
+            System.out.println("Если возраст человека " + agePerson3 + " то ему не нужно ходить в институт");
         }
         int agePerson4 = 25;
         if (agePerson4 >= 25) {
@@ -251,19 +249,21 @@ public class Main {
             System.out.println("Если возраст ребенка больше " + agePerson5 + " то он может кататься на аттракционе без сопровождения взрослых");
         }
 
-        int human = 102;
-        if(human <= 60){
-            System.out.println("В вогоне есть седячие " + (60-human) + " и осталось еще 42 стоячих места");
-        }else if (human <= 60 && human <=102){
-            System.out.println("В вагоне поезда закончелись сидячие места, остались только стоячии " +(102-human));
-        }else {
-            System.out.println("Вагон полностью забит, переполнен на " +(102-human) + " человек");
+        int human = 60;
+        if(human < 102 && human >=60){
+            System.out.println("В вогоне есть седячие " + (human) + " и еще 42 стоячих места");
+        }else{
+            System.out.println("Вагон уже полностью забит");
+
         }
-        int number1 = 3;
-        if (number1 >2){
-            System.out.println("Чесло " + number1 + " больше");
-        }else if (number1 >2 && number1 > 1){
-            System.out.println("Чесло 1 2 3 " + number1 + " какое больше");
+        int one = 20;
+        int two = 200;
+        int three = 2000;
+        if (one < three){
+            System.out.println("Число "+ (three) + " больше остольных");
+        }else if(one < two && two < three){
+            System.out.println("Какое чесло будет больше");
+
         }
 
 
